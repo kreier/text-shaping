@@ -1,11 +1,12 @@
 from fpdf import FPDF
+# fontname = ["NotoKhmer.ttf", "Khmer-Regular.ttf"]
 fontname = ["NotoKhmer.ttf", "Khmer-Regular.ttf", "Moul-Regular.ttf", "Battambang-Regular.ttf", 
             "Preahvihear-Regular.ttf", "Siemreap-Regular.ttf",
             "NotoSansKhmer-Regular.ttf", "NotoSansKhmer-Regular.otf", "NotoSansKhmerUI-Regular.ttf", 
             "NotoSansKhmerUI-Regular.otf", "NotoSansKhmerUI-Regular1.ttf", "NotoSansKhmerUI-Regular1.otf",
             "NotoSansKhmer-RegularDev.ttf", "NotoSerifKhmer-Regular.ttf"]
 # strings:    years,  alone,    1st year, sword,  fork
-teststrings = ["ឆ្នាំ", "ម្នាក់ ឯង", "ឆ្នាំទី១", "ដង្កាវ", "ង្គ្រា"]
+teststrings = ["ឆ្នាំ", "ម្នាក់ ឯង", "ឆ្នាំទី១", "ដង្កាវ", "ង្គ្រា", "\u1786\u17d2\u1789\u17B6\u17c6", "\u1786\u17D2\u1793\u17B6\u17C6"]
 
 def render_strings(teststrings):
     pdf.set_font('noto', size=24)
